@@ -1,0 +1,10 @@
+[project]
+name = "jaba"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "ultralytics>=8.3.139",
+    "yolo>=0.3.1",
+]
