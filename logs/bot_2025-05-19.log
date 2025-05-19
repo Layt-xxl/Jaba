@@ -230,3 +230,21 @@ SyntaxError: '[31m[1mlabels[0m' is not a valid YOLO argument. Similar argumen
     Community: https://community.ultralytics.com
     GitHub: https://github.com/ultralytics/ultralytics
     
+2025-05-19 14:36:04,215 - bot.bot - INFO - Инициализация модели из: ./weights/yolo11n.pt
+2025-05-19 14:36:04,501 - bot.bot - INFO - Модель успешно инициализирована
+2025-05-19 14:36:05,103 - bot.bot - INFO - Бот запущен! @Ightggg_bot (7890096293)
+2025-05-19 14:36:13,541 - bot.bot - INFO - Пользователь 823261295 нажал кнопку 'Анализ кожи'
+2025-05-19 14:36:16,829 - bot.bot - INFO - Пользователь 823261295 загрузил фото
+2025-05-19 14:36:16,830 - bot.bot - INFO - Сохранение фото от пользователя 823261295 в C:\Users\_Layt_\Desktop\Prodgekt\Jaba\temp\5bdac709c1cd4002976631f816217378.jpg
+2025-05-19 14:36:17,425 - bot.bot - INFO - Фото сохранено, запуск модели для пользователя 823261295
+2025-05-19 14:36:19,742 - bot.bot - INFO - Модель обработала фото пользователя 823261295. Обнаружено: 2 элементов
+2025-05-19 14:36:19,742 - bot.bot - INFO - Отправка результата пользователю 823261295
+2025-05-19 14:36:19,743 - bot.bot - ERROR - Ошибка при обработке фото пользователя 823261295: [Errno 2] No such file or directory: 'predictions\\5bdac709c1cd4002976631f816217378.jpg'
+Traceback (most recent call last):
+  File "C:\Users\_Layt_\Desktop\Prodgekt\Jaba\bot\bot.py", line 201, in handle_photo
+    photo=Path(result["output_image"]).open("rb"),
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\_Layt_\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'predictions\\5bdac709c1cd4002976631f816217378.jpg'
